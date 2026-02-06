@@ -1,1 +1,12 @@
+{
+  "jour": "Jour 1",
+  "titre": "Journal du survivant BHC",
+  "texte": "Premier jour du journal. Le monde est bruyant, mais j’avance droit. Aujourd’hui, je partage ce qui compte vraiment.",
+  "liens": [
+    {
+      "nom": "Vidéo du jour",
+      "url": "https://youtube.com/"
+    }
+  ]
+}
 
