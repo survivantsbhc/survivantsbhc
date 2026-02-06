@@ -1,1 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Journal du survivant BHC</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+  <div class="journal">
+    <h1 id="titre"></h1>
+    <h2 id="jour"></h2>
+    <p id="texte"></p>
+    <div id="liens"></div>
+    <footer>BHC — Bouger. Honneur. Créer.</footer>
+  </div>
+
+  <script>
+    fetch("data.json")
+      .then(res => res.json())
+      .then(data => {
+        document.getElementById("titre").innerText = data.titre;
+        document.getElementById("jour").innerText = data.jour;
+        document.getElementById("texte").innerText = data.texte;
+
+        const liensDiv = document.getElementById("liens");
+        data.liens.forEach(lien => {
+          const a = document.createElement("a");
+          a.href = lien.url;
+          a.innerText = lien.nom;
+          a.target = "_blank";
+          liensDiv.appendChild(a);
+        });
+      });
+  </script>
+
+</body>
+</html>
 
