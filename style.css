@@ -1,1 +1,26 @@
+body {
+  background: #111;
+  color: #eee;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.journal {
+  max-width: 600px;
+}
+
+a {
+  display: block;
+  margin: 10px 0;
+  color: #4da6ff;
+  text-decoration: none;
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 0.8em;
+  opacity: 0.6;
+}
 
